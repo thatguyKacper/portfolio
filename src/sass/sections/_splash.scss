@@ -1,12 +1,14 @@
 // Splash
 
 .splash {
+  position: relative;
   padding: 96px;
   overflow: hidden;
   height: 100vh;
   background-image: url("https://images.pexels.com/photos/57690/pexels-photo-57690.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   background-size: cover;
   background-attachment: fixed;
+
   &:before {
     content: "";
     position: absolute;
@@ -27,6 +29,7 @@
     color: $color-light;
     font-size: 96px;
     font-family: $font-header;
+
     span {
       color: $color-extra;
     }
@@ -38,10 +41,13 @@
     margin-bottom: 32px;
     padding: 4px 16px;
   }
+
   .icons {
     margin: 16px;
+
     a {
       padding: 4px;
+
       &:hover {
         color: $color-extra;
         transition: $transition;

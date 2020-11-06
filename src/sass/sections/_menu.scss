@@ -5,3 +5,38 @@ header {
   z-index: 1;
   width: 100%;
 }
+
+.menu-btn {
+  position: absolute;
+  z-index: 3;
+  right: 36px;
+  top: 36px;
+  cursor: pointer;
+  transition: $transition;
+
+  .btn-line {
+    width: 24px;
+    height: 4px;
+    margin: 0 0 4px 0;
+    background: $color-light;
+    transition: $transition;
+  }
+
+  &.close {
+    transform: rotate(180deg);
+
+    .btn-line {
+      &:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+
+      &:nth-child(2) {
+        opacity: 0;
+      }
+
+      &:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+      }
+    }
+  }
+}
